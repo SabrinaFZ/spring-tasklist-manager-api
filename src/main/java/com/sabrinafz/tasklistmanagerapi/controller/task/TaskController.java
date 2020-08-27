@@ -55,7 +55,7 @@ public class TaskController {
 	}
 
 	@PutMapping("/{id}")
-	public TaskDTO updateUser(@PathVariable int id, @RequestBody Task task) {
+	public TaskDTO updateUser(@PathVariable int id, @RequestBody Task task) throws Exception {
 
 		Task tempTask = taskService.getTaskById(id);
 
@@ -63,13 +63,18 @@ public class TaskController {
 			throw new CustomNotFoundException("Task with id " + id + " do not exist");
 		}
 
-		tempTask = taskService.updateTask(id, task);
+		try {
+			tempTask = taskService.updateTask(id, task);
+		} catch(Exception exc) {
+			throw new Exception(exc.getMessage());
+		}
+		
 		return convertToDTO(tempTask);
 
 	}
-	
+
 	@DeleteMapping("/{id}")
-	public ResponseEntity<Object> deleteTask(@PathVariable int id) {
+	public ResponseEntity<Object> deleteTask(@PathVariable int id) throws Exception {
 
 		Task tempTask = taskService.getTaskById(id);
 
@@ -77,7 +82,11 @@ public class TaskController {
 			throw new CustomNotFoundException("Task with id " + id + " do not exist");
 		}
 		
-		taskService.deleteTask(id);
+		try {
+			taskService.deleteTask(id);
+		} catch(Exception exc) {
+			throw new Exception(exc.getMessage());
+		}
 
 		return new ResponseEntity<>("Task with id " + id + " deleted", HttpStatus.NO_CONTENT);
 	}

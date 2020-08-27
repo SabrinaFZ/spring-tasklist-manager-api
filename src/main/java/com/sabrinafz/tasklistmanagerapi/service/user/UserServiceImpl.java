@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.service;
+package com.sabrinafz.tasklistmanagerapi.service.user;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.sabrinafz.tasklistmanagerapi.dao.UserRepository;
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.dao.user.UserRepository;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 
 @Service
 public class UserServiceImpl implements UserService {

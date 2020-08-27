@@ -1,9 +1,9 @@
-package com.sabrinafz.tasklistmanagerapi.dao;
+package com.sabrinafz.tasklistmanagerapi.dao.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {

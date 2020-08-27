@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.service;
+package com.sabrinafz.tasklistmanagerapi.service.task;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sabrinafz.tasklistmanagerapi.dao.TaskRepository;
-import com.sabrinafz.tasklistmanagerapi.dao.UserRepository;
-import com.sabrinafz.tasklistmanagerapi.entity.Task;
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.dao.task.TaskRepository;
+import com.sabrinafz.tasklistmanagerapi.dao.user.UserRepository;
+import com.sabrinafz.tasklistmanagerapi.entity.task.Task;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 
 @Service
 public class TaskServiceImpl implements TaskService {

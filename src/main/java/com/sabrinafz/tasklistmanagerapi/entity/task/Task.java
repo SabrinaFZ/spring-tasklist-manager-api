@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.entity;
+package com.sabrinafz.tasklistmanagerapi.entity.task;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -13,6 +13,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 import com.sabrinafz.tasklistmanagerapi.enums.Priority;
 import com.sabrinafz.tasklistmanagerapi.enums.Status;
 

@@ -1,5 +1,6 @@
-package com.sabrinafz.tasklistmanagerapi.dto;
+package com.sabrinafz.tasklistmanagerapi.dto.task;
 
+import com.sabrinafz.tasklistmanagerapi.dto.user.UserDTO;
 import com.sabrinafz.tasklistmanagerapi.enums.Priority;
 import com.sabrinafz.tasklistmanagerapi.enums.Status;
 

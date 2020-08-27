@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.dto;
+package com.sabrinafz.tasklistmanagerapi.dto.user;
 
 public class UserDTO {
 	

@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.entity;
+package com.sabrinafz.tasklistmanagerapi.entity.user;
 
 import java.util.Set;
 
@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.sabrinafz.tasklistmanagerapi.entity.task.Task;
 
 @Entity
 @Table(name = "user")

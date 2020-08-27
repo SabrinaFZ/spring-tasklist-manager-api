@@ -1,4 +1,4 @@
-package com.sabrinafz.tasklistmanagerapi.controller;
+package com.sabrinafz.tasklistmanagerapi.controller.task;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sabrinafz.tasklistmanagerapi.dto.TaskDTO;
-import com.sabrinafz.tasklistmanagerapi.dto.UserDTO;
-import com.sabrinafz.tasklistmanagerapi.entity.Task;
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.dto.task.TaskDTO;
+import com.sabrinafz.tasklistmanagerapi.dto.user.UserDTO;
+import com.sabrinafz.tasklistmanagerapi.entity.task.Task;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 import com.sabrinafz.tasklistmanagerapi.error.CustomNotFoundException;
-import com.sabrinafz.tasklistmanagerapi.service.TaskService;
+import com.sabrinafz.tasklistmanagerapi.service.task.TaskService;
 
 @RestController
 @RequestMapping("/tasks")

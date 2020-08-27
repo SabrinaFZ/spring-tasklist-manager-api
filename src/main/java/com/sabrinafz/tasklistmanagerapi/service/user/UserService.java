@@ -1,9 +1,9 @@
-package com.sabrinafz.tasklistmanagerapi.service;
+package com.sabrinafz.tasklistmanagerapi.service.user;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 
 public interface UserService {
 	

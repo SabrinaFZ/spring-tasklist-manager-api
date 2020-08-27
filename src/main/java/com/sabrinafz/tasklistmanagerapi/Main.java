@@ -8,10 +8,10 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
-public class TasklistManagerApiApplication {
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TasklistManagerApiApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 	
 	@Bean

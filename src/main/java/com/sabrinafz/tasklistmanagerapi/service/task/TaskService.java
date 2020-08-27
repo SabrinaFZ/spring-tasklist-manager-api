@@ -1,10 +1,10 @@
-package com.sabrinafz.tasklistmanagerapi.service;
+package com.sabrinafz.tasklistmanagerapi.service.task;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.sabrinafz.tasklistmanagerapi.entity.Task;
-import com.sabrinafz.tasklistmanagerapi.entity.User;
+import com.sabrinafz.tasklistmanagerapi.entity.task.Task;
+import com.sabrinafz.tasklistmanagerapi.entity.user.User;
 
 public interface TaskService {
 
